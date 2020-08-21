@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+$textColour: #303030;
+$bgColour: #ffffff;
+$tabBg: #dbeaff;
+$logoBg: rgb(216, 216, 216);
+
+body{
+	color: #000000;
+	background-color: white;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	/* Same as above */
+	font: normal 16px Arial, Helvetica, sans-serif;
+	
+	line-height:1.6em;
+}
+
+.container{
+    background-color: $bgColour;
+    width:550px;
+    margin-top: 10px;
+    border:1px $textColour solid;
+    box-shadow: 2px 2px 10px #888888;
+    padding:10px;
+    border: none;
+    border-radius:15px;
+
+    h1{
+        
+        color: $textColour;
+        margin-left: 20px;
+    }
+
+    input{
+        border: none;
+        height: 30px;
+        width: 350px;
+        margin-left: 15px;
+        background: $tabBg;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: px;
+        outline: none;
+        color: black;
+    }
+}
+
+.search-btn{
+    position: relative;
+    right: 35px;
+    color: rgb(0, 81, 255);
+}
+  
+
+.panel{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+
+.options{
+
+    /*&.Fb{
+        color: green;
+    }*/
+    
+    height: 150px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+    //width: 250px
+    line-height:1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; //bruhhh?????
+
+    /* i{
+        color: grey;
+        font-size: 15px;
+    }  */  
+}
+
+.icons{
+    //position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    
+    height: 60px;
+    width: 60px;
+    background-color: $logoBg;
+    border-radius: 50%;
+    border:none;
+
+    i{
+        font-size: 30px;
+        color: orangered;
+        margin-top: 50%;
+        transform: translate(0, -50%);
+    }
+
+}
+
+
+
+.soft{
+    text-decoration: none;
+    color: $textColour;
+    font-size: 16px;
+    margin-top: 10px;
+    
+    
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.softtype{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}

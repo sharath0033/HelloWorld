@@ -1,0 +1,44 @@
+
+
+<div class="container">
+    
+  
+    <div class="head">
+      <div class="hea1">Customer cohort by channel - AOV</div>
+      <div class="meter">
+        <div class="high">High</div>
+        <div class="low">Low</div>
+      </div>
+    </div>
+
+    <table class="stat-table">
+      <!--<thead>-->
+        <tr>
+          <th *ngFor = "let column of headers">
+            {{column}}
+          </th>
+        </tr>
+      
+
+      <!--<tbody>-->
+
+      <tr class="row" *ngFor="let item of info">
+        
+          
+            <td class="month">{{item.month}}</td>
+           
+            
+
+              <td class="new">{{item.new}}</td>
+              <td class="plat1">{{item.platform1}}</td>
+              <td class="plat2">{{item.platform2}}</td>
+              <td class="plat3">{{item.platform3}}</td>
+              <td class="plat4">{{item.platform4}}</td>
+              <td class="plat5">{{item.platform5}}</td>
+              <td class="plat6">{{item.platform6}}</td>
+            
+  
+      </tr>
+    
+    </table>
+  
