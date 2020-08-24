@@ -1,17 +1,14 @@
-.container{
-    
-    position: relative;
-    //top: 0px;
-    //left: 0px;
+ .full-wrapper{
+     width: 600px;
+     height: 510px;
+} 
+.container{    
+    position: absolute;
     margin: auto;
-    width: 680px;
-    height: 510px;
     background: #E7EEF8 0% 0% no-repeat padding-box;
     opacity: 1;
-    //display: flex;
     
-
-    .head{
+    .title-head{
 
         display: flex;
         justify-content: space-between;
@@ -20,7 +17,7 @@
         padding-left: 28px;
         padding-right: 14px;
     }
-    .hea1{
+    .title-text{
         text-align: left;
         font: normal normal 600 20px/30px Poppins;
         letter-spacing: 0px;
@@ -29,7 +26,7 @@
         
     }
     
-    .meter{
+    .intensity-bar{
         display: flex;
         justify-content: space-between;
         margin-top: 6px;
@@ -38,106 +35,70 @@
         background: transparent linear-gradient(90deg, #24D89B 0%, #DBBC28 50%, #E24056 100%) 0% 0% no-repeat padding-box;
         border-radius: 10px;
         opacity: 1;
-                
         text-align: left;
-
-        font: normal normal 600 12px/16px Segoe UI;
-        
-        
+        font: normal normal 600 12px/16px Segoe UI;    
         color: #FFFFFF;
         opacity: 1;
         vertical-align: center;
     }
     .high{
-        
         margin-left: 3px;
     }
     .low{
         margin-right: 8px;
-        
     }
-
-    /*.test{
-        position: absolute;
-        top: 114px;
-        color: red;
-    }*/
 
     .stat-table{
-        //border-collapse: collapse;
         //margin: 25px 0;
-        //font-size: 20px;
-        height: 19px;
+        
+        display:table;
+        
         text-align: center;
         font: normal normal 600 14px/19px Segoe UI;
-        
-        letter-spacing: -1px;
-        
+        letter-spacing: 0px;    
         color: #303539;
         opacity: 1;
 
-        border-spacing: 29px 45px;
-        
-    }
-    /*.row{
-        text-align: center;
-        
-        font: normal normal 600 14px/19px Segoe UI;
-        letter-spacing: 0px;
-        color: #303539;
-        opacity: 1;
-        //border-spacing: 19px 31px;
-    }
+        //order-spacing: 29px 45px;
+        .one-row{
+            display:table-row;
+            //border-spacing: 19px 31px;     
+            .head-cell{
+                display:table-cell;
+                width:81px;
+                flex-wrap: wrap;
+            }
 
-    .rowContainer{
-        padding-top: 14px;
-        padding-bottom: 13px;
-        background-color: red;
-    }*/
+            .body-cell{
+                display:table-cell;
+                width: 81px;
+                flex-wrap: wrap;
+                float:left;
+            }
+            
+            .body-container{
+                position: relative;
+                display:table-cell;
+                border-spacing: 5px;
+                height: 46px;
+                width: 571px;
+                text-align: center;
+                //text-decoration: none;
+                
+                padding-top: 14px;
+                padding-bottom: 13px;
+                
+                // line-height: 0px;
+                border-radius: 20px;
+                box-shadow: 1px 1px 10px #888888;
+                //width: 250px
+                //line-height:1.5em;
+                //white-space: nowrap;
+                //overflow: hidden;
+                //text-overflow: ellipsis; //bruhhh?????
+            }
+        }
 
-    .month{
-        
-        color: #303539;
-        
-    }
-
-
-    .new{
-        height: 19px;
-        color: #303539;
-        
-    }
-
-    .plat1{
-        
-        color: #27D99C;
-        
-    }
-
-    .plat2{
-        color: #8DC95A;
-        
-    }
-
-    .plat3{
-        color: #DBBC29;
-        
-    }
-
-    .plat4{
-        
-        color: #DBBC29;
-        
-    }
-
-    .plat5{
-        color: #EE8835;
-        
-    }
-
-    .plat6{
-        color: #E24157;
-        
     }
 
 }

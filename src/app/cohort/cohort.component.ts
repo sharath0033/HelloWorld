@@ -11,67 +11,110 @@ export class CohortComponent /*implements OnInit*/ {
 
 
 
-  headers = ["2020", "New Customers", "P1", "P2", "P3", "P4", "P5", "P6"];
+  //headers = ["2020", "New Customers", "P1", "P2", "P3", "P4", "P5", "P6"];
 
-  info = [
-    {
-      month: 'June',
-      new: 75,
-      platform1: '12,00,000',
-      platform2: '12,00,000',
-      platform3: '12,00,000',
-      platform4: '12,00,000',
-      platform5: '12,00,000',
-      platform6: '12,00,000'
+  info =
+  {
+    "heading": "Customer cohort by channel - AOV",
+    "names": {
+      "year": 2020,
+      "title": "New Customers",
+      "platform": [
+        {
+          "name": "Facebook",
+          "image": "assets/images/plat1.png",
+          "color": "#27D99C"
+        },
+        {
+          "name": "Email",
+          "image": "assets/images/plat2.png",
+          "color": "#8DC95A"
+        },
+        {
+          "name": "Marketing",
+          "image": "assets/images/plat3.png",
+          "color": "#DBBC29"
+        },
+        {
+          "name": "Target",
+          "image": "assets/images/plat4.png",
+          "color": "#DBBC29"
+        },
+        {
+          "name": "Document",
+          "image": "assets/images/plat5.png",
+          "color": "#EE8835"
+        },
+        {
+          "name": "Search",
+          "image": "assets/images/plat6.png",
+          "color": "#E24056"
+        }
+      ]
     },
-
-    {
-      month: 'July',
-      new: 95,
-      platform1: '12,00,000',
-      platform2: '12,00,000',
-      platform3: '12,00,000',
-      platform4: '12,00,000',
-      platform5: '12,00,000',
-      platform6: '12,00,000'
-    },
-
-    {
-      month: 'August',
-      new: 165,
-      platform1: '12,00,000',
-      platform2: '12,00,000',
-      platform3: '12,00,000',
-      platform4: '12,00,000',
-      platform5: '12,00,000',
-      platform6: '12,00,000'
-    },
-
-    {
-      month: 'September',
-      new: 391,
-      platform1: '12,00,000',
-      platform2: '12,00,000',
-      platform3: '12,00,000',
-      platform4: '12,00,000',
-      platform5: '12,00,000',
-      platform6: '12,00,000'
-    },
-
-    {
-      month: 'October',
-      new: 270,
-      platform1: '12,00,000',
-      platform2: '12,00,000',
-      platform3: '12,00,000',
-      platform4: '12,00,000',
-      platform5: '12,00,000',
-      platform6: '12,00,000'
-    },
-
-    
-
-  ];
+    "values": [
+      {
+        "month": "June",
+        "newCustomerCount": 75,
+        "platform": [
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000"
+        ]
+      },
+      {
+        "month": "July",
+        "newCustomerCount": 95,
+        "platform": [
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000"
+        ]
+      },
+      {
+        "month": "August",
+        "newCustomerCount": 165,
+        "platform": [
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000"
+        ]
+      },
+      {
+        "month": "September",
+        "newCustomerCount": 391,
+        "platform": [
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000"
+        ]
+      },
+      {
+        "month": "October",
+        "newCustomerCount": 270,
+        "platform": [
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000",
+          "12,00,000"
+        ]
+      }
+    ]
+  }
 
   ngOnInit(): void {
   }

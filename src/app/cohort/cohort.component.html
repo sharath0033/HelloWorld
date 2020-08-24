@@ -1,44 +1,42 @@
-
+<div class="full-wrapper">
 
 <div class="container">
-    
-  
-    <div class="head">
-      <div class="hea1">Customer cohort by channel - AOV</div>
-      <div class="meter">
-        <div class="high">High</div>
-        <div class="low">Low</div>
+
+
+  <div class="title-head">
+    <div class="title-text">{{info.heading}}</div>
+    <div class="intensity-bar">
+      <div class="high">High</div>
+      <div class="low">Low</div>
+    </div>
+  </div>
+
+  <div class="stat-table">
+    <!--<thead>-->
+
+    <div class="one-row">
+      <div class="head-cell">{{info.names.year}}</div>
+
+      <div class="head-container">
+      <div class="head-cell">{{info.names.title}}</div>
+      <div class="head-cell" *ngFor="let item of info.names.platform; let i=index">        
+        <img [src]="item.image">
+      </div>
       </div>
     </div>
-
-    <table class="stat-table">
-      <!--<thead>-->
-        <tr>
-          <th *ngFor = "let column of headers">
-            {{column}}
-          </th>
-        </tr>
-      
-
-      <!--<tbody>-->
-
-      <tr class="row" *ngFor="let item of info">
-        
-          
-            <td class="month">{{item.month}}</td>
-           
-            
-
-              <td class="new">{{item.new}}</td>
-              <td class="plat1">{{item.platform1}}</td>
-              <td class="plat2">{{item.platform2}}</td>
-              <td class="plat3">{{item.platform3}}</td>
-              <td class="plat4">{{item.platform4}}</td>
-              <td class="plat5">{{item.platform5}}</td>
-              <td class="plat6">{{item.platform6}}</td>
-            
   
-      </tr>
+    <div class="one-row" *ngFor="let item of info.values">
+      <div class="body-cell">{{item.month}}</div>
+      <div class="body-container">
+      <div class="body-cell">
+        {{item.newCustomerCount}}
+      </div>
+      <div class="body-cell" *ngFor="let item2 of item.platform; let i=index" [ngStyle]="{color: info.names.platform[i].color}">
+        {{item2}}
+      </div>
+    </div>
     
-    </table>
-  
+
+  </div>
+
+</div>
