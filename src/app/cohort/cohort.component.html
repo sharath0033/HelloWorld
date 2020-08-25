@@ -1,42 +1,33 @@
 <div class="full-wrapper">
+    <div class="container">
+        <div class="title-head">
+            <div class="title-text">{{data.heading}}</div>
+            <div class="intensity-bar">
+                <div class="high">High</div>
+                <div class="low">Low</div>
+            </div>
+        </div>
 
-<div class="container">
+        <div class="stat-table">
+            <div class="one-row">
+                <div class="head-cell">{{data.names.year}}</div>
+                <div class="head-container">
+                    <div class="head-cell">{{data.names.title}}</div>
+                    <div class="head-cell" *ngFor="let item of data.names.platform; let i=index">
+                        <img [src]="item.image" width="40">
+                    </div>
+                </div>
+            </div>
 
-
-  <div class="title-head">
-    <div class="title-text">{{info.heading}}</div>
-    <div class="intensity-bar">
-      <div class="high">High</div>
-      <div class="low">Low</div>
+            <div class="one-row" *ngFor="let item of data.values">
+                <div class="body-cell">{{item.month}}</div>
+                <div class="body-container">
+                    <div class="body-cell">{{item.newCustomerCount}}</div>
+                    <div class="body-cell" *ngFor="let platform of item.platform; let i=index"
+                        [ngStyle]="{color: data.names.platform[i].color}">{{platform}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="stat-table">
-    <!--<thead?>-->
-
-    <div class="one-row">
-      <div class="head-cell">{{info.names.year}}</div>
-
-      <div class="head-container">
-      <div class="head-cell">{{info.names.title}}</div>
-      <div class="head-cell" *ngFor="let item of info.names.platform; let i=index">        
-        <img [src]="item.image">
-      </div>
-      </div>
-    </div>
-  
-    <div class="one-row" *ngFor="let item of info.values">
-      <div class="body-cell">{{item.month}}</div>
-      <div class="body-container">
-      <div class="body-cell">
-        {{item.newCustomerCount}}
-      </div>
-      <div class="body-cell" *ngFor="let item2 of item.platform; let i=index" [ngStyle]="{color: info.names.platform[i].color}">
-        {{item2}}
-      </div>
-    </div>
-    
-
-  </div>
-
 </div>

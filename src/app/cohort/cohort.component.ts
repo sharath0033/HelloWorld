@@ -5,16 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cohort.component.html',
   styleUrls: ['./cohort.component.scss']
 })
-export class CohortComponent /*implements OnInit*/ {
-
-  constructor() { }
-
-
-
-  //headers = ["2020", "New Customers", "P1", "P2", "P3", "P4", "P5", "P6"];
-
-  info =
-  {
+export class CohortComponent implements OnInit {
+  data: any = {
     "heading": "Customer cohort by channel - AOV",
     "names": {
       "year": 2020,
@@ -116,7 +108,8 @@ export class CohortComponent /*implements OnInit*/ {
     ]
   }
 
-  ngOnInit(): void {
-  }
+  constructor() { }
+
+  ngOnInit(): void { }
 
 }
